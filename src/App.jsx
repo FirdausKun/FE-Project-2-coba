@@ -22,7 +22,7 @@ function App() {
 //       <Navbar/>
       {/* <Testing/> */}
       <Routes>
-      <Route path="/home" element={<Login/>} /> 
+//       <Route path="/home" element={<Login/>} /> 
         <Route path="/register" element={<Register/>} />
         <Route path="/dashboard" element={<HomePage/>} />
         <Route path='/penanggulangan' element={<PenanggulanganPage/>}/>
