@@ -11,8 +11,8 @@ import PenanggulanganPage from './Pages/PenanggulanganPage'
 
 import './css/readmore.css'
 import Testing from './Components/Testing'
-// import LoginPage from './Pages/LoginPage'
-// import RegisterPage from './pages/RegisterPage'
+import Login from "./components/Logres/Login";
+import Register from "./components/Logres/Register";
 // import './css/style-penanggulangan.css'
 
 function App() {
@@ -22,10 +22,11 @@ function App() {
       <Navbar/>
       {/* <Testing/> */}
       <Routes>
-      {/* <Route path="/" element={<LoginPage/>}/> */}
-        <Route path="/" element={<HomePage/>} />
+      <Route path="/home" element={<Login/>} /> 
+        <Route path="/register" element={<Register/>} />
+        <Route path="/dashboard" element={<HomePage/>} />
         <Route path='/penanggulangan' element={<PenanggulanganPage/>}/>
-        {/* <Route path="/register" element={<RegisterPage/>}/> */}
+        
       </Routes>
       <Footer/>
     </>
